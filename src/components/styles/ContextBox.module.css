@@ -1,0 +1,21 @@
+.box {
+    margin: 3px;
+    background-color: #ffffff;
+    border: 1px solid #dae8f5;
+    font-size: .875rem;
+}
+
+.header {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.body {
+    padding: 20px;
+}
+
+.box *:first-child {
+    margin-top: 0;
+}

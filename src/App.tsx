@@ -1,35 +1,89 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styles from "./styles/App.module.css";
+import { ContextBox } from "./components/ContextBox";
 
-interface AppProps {}
+export const App = () => (
+    <div className={styles.base}>
+        <header>YETRIC</header>
+        <div className={styles.status}>Status</div>
+        <main>
+            <nav>
+                <ul className={styles.navigation}>
+                    <li>Hosme</li>
+                    <li>Hosme</li>
+                    <li>Hosme</li>
+                    <li>Hosme</li>
+                    <li>Hosme</li>
+                    <li>Hosme</li>
+                    <li>Hosme</li>
+                    <li>Hosme</li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Snowpack Starter Kit</h1>
+                <p className="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusamus consequuntur corporis distinctio dolor est, et,
+                    nobis quaerat quas quibusdam quis sunt tenetur? Eveniet
+                    expedita nihil numquam. Aliquam consectetur reiciendis
+                    tenetur.
+                </p>
+                <h2>iPhone 13 will be Awesome</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci architecto cupiditate dolore eius, esse eum impedit
+                    magni maxime nam natus nemo nobis, officiis quas quis
+                    repudiandae sequi sint sunt! Magni.
+                </p>
 
-function App({}: AppProps) {
-  const [count, setCount] = useState(0);
-  setTimeout(() => setCount(count + 1), 1000);
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+                <h3>10 Reasons to Sell Your Galaxy Right Now</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci architecto cupiditate dolore eius, esse eum impedit
+                    magni maxime nam natus nemo nobis, officiis quas quis
+                    repudiandae sequi sint sunt! Magni.
+                </p>
+
+                <h4> Adipisci architecto cupiditate dolore</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci architecto cupiditate dolore eius, esse eum impedit
+                    magni maxime nam natus nemo nobis, officiis quas quis
+                    repudiandae sequi sint sunt! Magni.
+                </p>
+
+                <h5>Another sub sub sub sub header</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci architecto cupiditate dolore eius, esse eum impedit
+                    magni maxime nam natus nemo nobis, officiis quas quis
+                    repudiandae sequi sint sunt! Magni.
+                </p>
+
+                <h6>Another sub sub sub sub sub header</h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci architecto cupiditate dolore eius, esse eum impedit
+                    magni maxime nam natus nemo nobis, officiis quas quis
+                    repudiandae sequi sint sunt! Magni.
+                </p>
+            </article>
+            <aside>
+                <ContextBox header={"Count it as something"}>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                    assumenda, commodi distinctio dolorum ea eligendi ex iste
+                    iure laudantium optio qui quibusdam quidem quis repellat
+                    sapiente sequi, sit totam velit!
+                </ContextBox>
+                <ContextBox>
+                    <h3>Count it as something</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                    assumenda, commodi distinctio dolorum ea eligendi ex iste
+                    iure laudantium optio qui quibusdam quidem quis repellat
+                    sapiente sequi, sit totam velit!
+                </ContextBox>
+            </aside>
+        </main>
+        <footer>Footer</footer>
     </div>
-  );
-}
-
-export default App;
+);
